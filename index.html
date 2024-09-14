@@ -4,10 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Vellore Ads</title>
-    <!-- Tailwind CSS link -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Alpine.js for Carousel functionality -->
-    <script src="https://unpkg.com/alpinejs" defer></script>
+            <!-- Tailwind CSS link -->
+            <script src="https://cdn.tailwindcss.com"></script>
+            <!-- Alpine.js for Carousel functionality -->
+            <script src="https://unpkg.com/alpinejs" defer></script>
+
     <!-- Poppins font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,8 +19,9 @@
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <!-- Owl Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/index.css" />
@@ -130,33 +132,9 @@
         <div class="text-center mt-10"><button class="bg-[#1274c0] text-white px-4 py-2 rounded-tr-xl rounded-bl-xl transition duration-200 ease-in-out hover:bg-[#ff6c00] active:bg-[#1274c0] focus:outline-none">All Categories</button></div>
         <!-- options --> 
          <!-- car -->
-              <!-- Carousel Container -->
-    <div x-data="carousel()" x-init="start()" class="md:w-[60%] md:h-[250px] h-[150px]  mx-auto overflow-hidden relative mt-12 rounded-lg">
-      <!-- Slides Track -->
-      <div class="carousel-track" :style="{ transform: `translateX(-${activeSlide * 100}%)` }">
-          <template x-for="(slide, index) in slides" :key="index">
-              <div class="w-full flex-shrink-0">
-                  <img :src="'https://picsum.photos/id/' + (index + 10) + '/800/400'" alt="Slide Image" class="w-full h-64 object-cover rounded-lg shadow-lg">
-              </div>
-          </template>
-      </div>
 
-      <!-- Navigation Buttons -->
-      <div class="absolute inset-0 flex items-center justify-between px-4">
-          <!-- Prev Button -->
-          <button @click="prev()" class="bg-gray-800 bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75">
-              &#9664;
-          </button>
+         <div class="md:w-[60%] md:h-[250px] h-[150px]  mx-auto overflow-hidden relative mt-12 rounded-lg"  style="background-image: url(images/ad.webp);background-position: center;background-size: cover;"></div>
 
-          <!-- Next Button -->
-          <button @click="next()" class="bg-gray-800 bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75">
-              &#9654;
-          </button>
-      </div>
-
-      <!-- Indicator Dots -->
-
-  </div>
          <!-- car -->
 
  </div>
@@ -305,8 +283,11 @@
 
     </div>
 
+
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Owl Carousel JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="/js/index.js" ></script>
   </body>
 </html>

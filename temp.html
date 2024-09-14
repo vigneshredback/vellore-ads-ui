@@ -1,0 +1,27 @@
+              <!-- Carousel Container -->
+              <div x-data="carousel()" x-init="start()" class="md:w-[60%] md:h-[250px] h-[150px]  mx-auto overflow-hidden relative mt-12 rounded-lg">
+                <!-- Slides Track -->
+                <div class="carousel-track" :style="{ transform: `translateX(-${activeSlide * 100}%)` }">
+                    <template x-for="(slide, index) in slides" :key="index">
+                        <div class="w-full flex-shrink-0">
+                            <img :src="'https://picsum.photos/id/' + (index + 10) + '/800/400'" alt="Slide Image" class="w-full h-64 object-cover rounded-lg shadow-lg">
+                        </div>
+                    </template>
+                </div>
+          
+                <!-- Navigation Buttons -->
+                <div class="absolute inset-0 flex items-center justify-between px-4">
+                    <!-- Prev Button -->
+                    <button @click="prev()" class="bg-gray-800 bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75">
+                        &#9664;
+                    </button>
+          
+                    <!-- Next Button -->
+                    <button @click="next()" class="bg-gray-800 bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75">
+                        &#9654;
+                    </button>
+                </div>
+          
+                <!-- Indicator Dots -->
+          
+              </div>
