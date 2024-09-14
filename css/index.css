@@ -4,4 +4,8 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
 

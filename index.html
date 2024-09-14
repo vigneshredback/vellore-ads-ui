@@ -6,6 +6,8 @@
     <title>Vellore Ads</title>
     <!-- Tailwind CSS link -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alpine.js for Carousel functionality -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
     <!-- Poppins font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,149 +31,238 @@
   <body class=" font-poppins">
 
     <!-- Main Container -->
-    <div class="container mx-auto bg-white px-4 md:px-10 py-4">
+    <div class=" mx-auto bg-white px-4 md:px-10 py-4">
 
-      <!-- Header Starts Here -->
-      <header class="w-full flex flex-col md:flex-row justify-between items-center">
-        <!-- Logo and Navigation -->
-        <nav class="flex items-center mb-4 md:mb-0">
-          <a href="#" class="text-3xl md:text-4xl text-[#1274c0] font-medium">
-            vellore<span class="text-[#ff6c00] ">ads</span>
-          </a>
-        </nav>
-        <!-- User Actions -->
-        <nav class="flex items-center space-x-4">
-          <i class="fa-regular fa-bell text-xl md:text-2xl text-gray-600"></i>
-          <button class="bg-[#1274c0] text-white px-4 py-2 rounded text-sm md:text-base">Sign in</button>
-          <i class="fa-solid fa-user text-xl md:text-2xl text-gray-600"></i>
-        </nav>
-      </header>
-      <!-- Header Ends Here -->
-      <!-- heading start -->
-      <p class="text-center text-3xl">Connect with the right <span class="text-[#ff0000]">service experts </span><span class="font-[50px]">&#128512;</span></p>
-      <!-- heading end -->
+<!-- landing div -->
+ <div>
+        <!-- Header Starts Here -->
+        <header class="w-full flex  justify-between items-center border-b-2 pb-5 mb-10">
+          <!-- Logo and Navigation -->
+          <nav class="flex items-center ">
+            <a href="#" class="text-3xl md:text-4xl text-[#1274c0] font-medium">
+              vellore<span class="text-[#ff6c00] ">ads</span>
+            </a>
+          </nav>
+          <!-- User Actions -->
+          <nav class="flex items-center space-x-4">
+            <i class="fa-regular fa-bell text-xl md:text-2xl text-gray-600"></i>
+            <button class="bg-[#1274c0] text-white px-4 py-2 rounded text-sm md:text-base">Sign in</button>
+            <i class="fa-solid fa-user text-xl md:text-2xl text-gray-600"></i>
+          </nav>
+        </header>
+        <!-- Header Ends Here -->
 
-      <!-- Search Starts Here -->
-      <div class="flex items-center border border-gray-300 rounded-full p-2 bg-white shadow-sm mt-4">
-        <input type="text" id="search-input" placeholder="Search For Temples In Vellore..." class="outline-none flex-grow px-4 py-2 text-gray-700 rounded-full">
-        <i class="fas fa-search text-gray-500 text-xl md:text-2xl me-5"></i>
-      </div>
-      <!-- Search Ends Here -->
+        <!-- side bar -->
+         
+        <!-- side bar -->
+
+        <div class="flex  bg-blue-500 mb-10">
+          <p class="h-[100%] bg-[#1274c0] px-[10px] py-[10px] md:text-3xl text-white">Breaking</p>
+          <marquee class="px-[10px] py-[10px] md:text-3xl bg-[#ff6c00] text-white" behavior="scroll" direction="">
+            <span class="ps-20">Tommorow (15-09-24) ShutDown area list Abdullapyram,Sathuvacherry,Anaicut,Gudiyatham<a href="" class="text-[#1274c0] ps-2">Visit now</a></span>
+            <span class="ps-20">New KFC Launching In Vellore green-circle<a href="" class="text-[#1274c0] ps-2">Visit now</a></span>
+            <span class="ps-20">Thalapathy's new movie 'GOAT' tickets open in PVR<a href="" class="text-[#1274c0] ps-2">Book Now</a></span>
+          </marquee>
+        </div>
 
 
-      <div class="container mx-auto">
-        <div class="flex flex-wrap">
-          <div class="w-full md:w-1/6 p-2">
-            <div class="w-[25%] mx-auto h-[100px]" style="background-image: url(images/listing.png);background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
-            <p class>Hotels</p>
+
+        <!-- heading start -->
+        <p class="text-center text-3xl">Connect with the right <span class="text-[#ff0000]">service experts </span><span class="font-[50px]">&#128512;</span></p>
+        <!-- heading end -->
+  
+        <!-- Search Starts Here -->
+        <div class="flex items-center border border-gray-300 rounded-full p-2 bg-white shadow-sm mt-4 md:w-[60%] mx-auto">
+          <input type="text" id="search-input" placeholder="Search For Temples In Vellore..." class="outline-none flex-grow px-4 py-2 text-gray-700 rounded-full">
+          <i class="fas fa-search text-gray-500 text-xl md:text-2xl me-5"></i>
+        </div>
+        <!-- Search Ends Here -->
+  
+        <!-- options -->
+        <div class="grid grid-cols-4  md:grid-cols-6 gap-4 mx-2 mt-5 md:w-[60%] mx-auto">
+          <div class="h-[30px] md:h-[50px] md:mt-3 mt-5">
+            <div class="w-[100%] h-[100%] mb-1" style="background-image: url(images/listing.png);background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+            <p class="text-center text-xs">Allservices</p>
           </div>
-          <div class="w-full md:w-1/6 p-2">
-            <div class="w-[50%] mx-auto h-[100px]" style="background-image: url(images/listing.png);background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+          <div class="h-[30px] md:h-[50px] md:mt-5  mt-5">
+            <div class="w-[100%] h-[100%]" style="background-image: url(images/expert.webp);background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+            <p class="text-center text-xs">Experts</p>
           </div>
-          <div class="w-full md:w-1/6 p-2">
-            <div class="w-[50%] mx-auto h-[100px]" style="background-image: url(images/listing.png);background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+          <div class="h-[30px] md:h-[50px] md:mt-5  mt-5">
+            <div class="w-[100%] h-[100%] mb-1" style="background-image: url(images/employee.webp);background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+            <p class="text-center text-xs">Jobs</p>
           </div>
-          <div class="w-full md:w-1/6 p-2">
-            <div class="w-[50%] mx-auto h-[100px]" style="background-image: url(images/listing.png);background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+          <div class="h-[30px] md:h-[50px] md:mt-5  mt-5">
+            <div class="w-[100%] h-[100%] mb-1" style="background-image: url(images/hot-air-balloon.webp);background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+            <p class="text-center text-xs">Travel</p>
           </div>
-          <div class="w-full md:w-1/6 p-2">
-            <div class="w-[50%] mx-auto h-[100px]" style="background-image: url(images/listing.png);background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+          <div class="h-[30px] md:h-[50px] md:mt-5  mt-5">
+            <div class="w-[100%] h-[100%] mb-1" style="background-image: url(images/news.png);background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+            <p class="text-center text-xs">News</p>
           </div>
-          <div class="w-full md:w-1/6 p-2">
-            <div class="w-[50%] mx-auto h-[100px]" style="background-image: url(images/listing.png);background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+          <div class="h-[30px] md:h-[50px] md:mt-5  mt-5">
+            <div class="w-[100%] h-[100%] mb-1" style="background-image: url(images/calendar.webp);background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+            <p class="text-center text-xs">Events</p>
+          </div>
+          <div class="h-[30px] md:h-[50px] md:mt-5  mt-5">
+            <div class="w-[100%] h-[100%] mb-1" style="background-image: url(images/calendar.webp);background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+            <p class="text-center text-xs">Products</p>
+          </div>
+          <div class="h-[30px] md:h-[50px] md:mt-5  mt-5">
+            <div class="w-[100%] h-[100%] mb-1" style="background-image: url(images/coupons.webp);background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+            <p class="text-center text-xs">Coupons</p>
+          </div>
+          <div class="h-[30px] md:h-[50px] md:mt-5  mt-5">
+            <div class="w-[100%] h-[100%] mb-1" style="background-image: url(images/blog1.webp);background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+            <p class="text-center text-xs">Blogs</p>
+          </div>
+          <div class="h-[30px] md:h-[50px] md:mt-3 mt-5">
+            <div class="w-[100%] h-[100%] mb-1" style="background-image: url(images/listing.png);background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+            <p class="text-center text-xs">Allservices</p>
+          </div>
+          <div class="h-[30px] md:h-[50px] md:mt-5  mt-5">
+            <div class="w-[100%] h-[100%]" style="background-image: url(images/expert.webp);background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+            <p class="text-center text-xs">Experts</p>
+          </div>
+          <div class="h-[30px] md:h-[50px] md:mt-5  mt-5">
+            <div class="w-[100%] h-[100%] mb-1" style="background-image: url(images/employee.webp);background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+            <p class="text-center text-xs">Jobs</p>
           </div>
         </div>
+        <div class="text-center mt-10"><button class="bg-[#1274c0] text-white px-4 py-2 rounded-tr-xl rounded-bl-xl transition duration-200 ease-in-out hover:bg-[#ff6c00] active:bg-[#1274c0] focus:outline-none">All Categories</button></div>
+        <!-- options --> 
+         <!-- car -->
+              <!-- Carousel Container -->
+    <div x-data="carousel()" x-init="start()" class="md:w-[60%] md:h-[250px] h-[150px]  mx-auto overflow-hidden relative mt-12 rounded-lg">
+      <!-- Slides Track -->
+      <div class="carousel-track" :style="{ transform: `translateX(-${activeSlide * 100}%)` }">
+          <template x-for="(slide, index) in slides" :key="index">
+              <div class="w-full flex-shrink-0">
+                  <img :src="'https://picsum.photos/id/' + (index + 10) + '/800/400'" alt="Slide Image" class="w-full h-64 object-cover rounded-lg shadow-lg">
+              </div>
+          </template>
       </div>
 
+      <!-- Navigation Buttons -->
+      <div class="absolute inset-0 flex items-center justify-between px-4">
+          <!-- Prev Button -->
+          <button @click="prev()" class="bg-gray-800 bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75">
+              &#9664;
+          </button>
+
+          <!-- Next Button -->
+          <button @click="next()" class="bg-gray-800 bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75">
+              &#9654;
+          </button>
+      </div>
+
+      <!-- Indicator Dots -->
+
+  </div>
+         <!-- car -->
+
+ </div>
+<!-- landing div -->
 
 
-      <!-- bento grid start-->
-      <section class=" rounded-2xl border border-[#ffffff] mt-10 pb-5 bg-[#FFF4EA]">
-        <h2 class="text-center text-4xl font-light mt-5  ">Vellore's Entertainment</h2>
-        <div class="py-4 px-2 mx-auto sm:py-4 lg:px-6">
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
-            <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
-              <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-                <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" style="background-image: url(images/theatre.webp);background-position: center;background-size: cover;"></div>
-                <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Theatre</h3>
-              </a>
-            </div>
-            <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
-              <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
-                <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"  style="background-image: url(images/stadium.jpg);background-position: center;background-size: cover;"></div>
-                <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Stadium</h3>
-              </a>
-              <div class="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
-                <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-                  <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" style="background-image: url(images/gym.jpg);background-position: center;background-size: cover;"></div>
-                  <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                  <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Gym</h3>
-                </a>
-                <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-                  <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" style="background-image: url(images/clubs.jpg);background-position: center;background-size: cover;"></div>
-                  <img src="https:/images.unsplash.com/photo-1626897505254-e0f811aa9bf7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" >
-                  <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                  <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Clubs</h3>
-                </a>
+
+
+
+
+
+
+
+<div class="container mx-auto">
+          <!-- bento grid start-->
+          <section class=" rounded-2xl border border-[#ffffff] mt-10 pb-5 bg-[#FFF4EA]">
+            <h2 class="text-center text-4xl font-light mt-5  ">Vellore's Education</h2>
+            <div class="py-4 px-2 mx-auto sm:py-4 lg:px-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
+                <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
+                  <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
+                    <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" style="background-image: url(images/theatre.webp);background-position: center;background-size: cover;"></div>
+                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                    <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Theatre</h3>
+                  </a>
+                </div>
+                <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
+                  <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
+                    <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"  style="background-image: url(images/stadium.jpg);background-position: center;background-size: cover;"></div>
+                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                    <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Stadium</h3>
+                  </a>
+                  <div class="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
+                    <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+                      <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" style="background-image: url(images/gym.jpg);background-position: center;background-size: cover;"></div>
+                      <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                      <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Gym</h3>
+                    </a>
+                    <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+                      <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" style="background-image: url(images/clubs.jpg);background-position: center;background-size: cover;"></div>
+                      <img src="https:/images.unsplash.com/photo-1626897505254-e0f811aa9bf7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" >
+                      <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                      <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Clubs</h3>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col">
+                  <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
+                    <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"  style="background-image: url(images/parks.jfif);background-position: center;background-size: cover;"></div>
+                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                    <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Parks</h3>
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col">
-              <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-                <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"  style="background-image: url(images/parks.jfif);background-position: center;background-size: cover;"></div>
-                <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Parks</h3>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- bento grid ends -->
-
-
-      <!-- bento grid start-->
-      <section class=" rounded-2xl border border-[#ffffff] mt-10 pb-5 bg-[#AAB396]">
-        <h2 class="text-center text-4xl font-light mt-5  ">Vellore's Education</h2>
-        <div class="py-4 px-2 mx-auto sm:py-4 lg:px-6">
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full ">
-            <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
-              <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-                <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" style="background-image: url(images/collegepics.jpg);background-position: center;background-size: cover;"></div>
-                <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">College</h3>
-              </a>
-            </div>
-            <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50 " style="background-color: #AAB396;">
-              <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
-                <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"  style="background-image: url(images/schoolpics.webp);background-position: center;background-size: cover;"></div>
-                <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Schools</h3>
-              </a>
-              <div class="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
-                <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-                  <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" style="background-image: url(images/institution.webp);background-position: center;background-size: cover;"></div>
-                  <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                  <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Coaching center</h3>
-                </a>
-                <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
-                  <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" style="background-image: url(images/kinder.webp);background-position: center;background-size: cover;"></div>
-                  <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                  <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Kids School</h3>
-                </a>
+            <div class="py-4 px-2 mx-auto sm:py-4 lg:px-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
+                <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
+                  <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4">
+                    <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"  style="background-image: url(images/schoolpics.webp);background-position: center;background-size: cover;"></div>
+                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                    <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Schools</h3>
+                  </a>
+                  <div class="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
+                    <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+                      <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" style="background-image: url(images/institution.webp);background-position: center;background-size: cover;"></div>
+                      <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                      <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Coaching Center</h3>
+                    </a>
+                    <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40">
+                      <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" style="background-image: url(images/kinder.webp);background-position: center;background-size: cover;"></div>
+                      <img src="https:/images.unsplash.com/photo-1626897505254-e0f811aa9bf7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" >
+                      <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                      <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">Kids School</h3>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col">
+                  <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
+                    <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"  style="background-image: url(images/itinstitutes.jpg);background-position: center;background-size: cover;"></div>
+                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                    <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">IT Training</h3>
+                  </a>
+                </div>
+                <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
+                  <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
+                    <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" style="background-image: url(images/collegepics.jpg);background-position: center;background-size: cover;"></div>
+                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                    <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">College</h3>
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col">
-              <a href="" class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow">
-                <div class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"  style="background-image: url(images/itinstitutes.jpg);background-position: center;background-size: cover;"></div>
-                <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">IT Training</h3>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- bento grid ends -->
+          </section>
+          <!-- bento grid ends -->
+</div>
+
+
+
+
+
+
+
+
 
 
 

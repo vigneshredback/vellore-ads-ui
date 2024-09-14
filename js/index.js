@@ -43,3 +43,31 @@ $(document).ready(function(){
         }
     });
 });
+// carousel script
+function carousel() {
+    return {
+        activeSlide: 0,
+        slides: [0, 1, 2, 3], // Example slides
+        interval: null,
+
+        start() {
+            // Automatically start the slide show
+            this.interval = setInterval(() => {
+                this.next();
+            }, 3000); // Slide every 3 seconds
+        },
+
+        next() {
+            this.activeSlide = (this.activeSlide + 1) % this.slides.length;
+        },
+
+        prev() {
+            this.activeSlide = this.activeSlide === 0 ? this.slides.length - 1 : this.activeSlide - 1;
+        },
+
+        stop() {
+            // Stop the auto-slide
+            clearInterval(this.interval);
+        }
+    }
+}
