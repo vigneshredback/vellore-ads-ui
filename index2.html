@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+    *{
+        font-family: "Poppins", sans-serif;
+    }
+</style>
+</head>
+<body>
+<div class="main-container">
+    
+    
+    <div class="landing-page w-[100vw] h-[100vh]" style="background-position: center;background-size: cover;background-repeat: no-repeat;background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(banner6.webp);">
+        <!-- navbar starts -->
+        <nav class="flex justify-between md:p-5 pt-3 ">
+            <a href="#" class="text-3xl text-white"><img src="logo.webp" alt=""></a>
+            <div class="flex items-center justify-center">
+                <a href=""><button class="md:me-2 px-5 py-1 bg-yellow-500 text-white rounded-full">Login / signup</button></a>
+                <a href=""><button class="md:me-2 px-5 py-1 bg-blue-500 text-white rounded-full">List Your Business</button></a>
+            </div>
+        </nav>
+        <!-- navbar ends -->
+         <header class="text-white text-center text-2xl mt-12 px-10 md:text-5xl">Connect with the right service experts</header>
+         <header class="text-white text-center  mt-2 px-10  md:text-xl font-extralight">Find B2B & B2C service provider's Contact, address, reviews & ratings</header>
+         
+        <div class="relative  md:w-[60vw] mx-auto">
+
+            <div class="search-container flex justify-center items-center mt-8 w-[90vw]  md:w-[60vw] mx-auto">
+                <span class="flex justify-center items-center px-5 bg-[orange] py-4" onclick="openCategories()"><i class="fa-solid fa-bars text-white"></i></span>
+                <input type="text" placeholder="Search here" class=" w-[100%] px-5 py-3 outline-none">
+            </div>
+    
+             <div class="display-none w-[90vw] md:w-[60vw] ms-5 md:ms-0 mx-auto h-[300px] bg-[#f9f9f9] absolute mx-auto mt-1 p-4 grid grid-cols-3 md:grid-cols-8 overflow-y-scroll" id="categories">
+
+                <span class="flex flex-col justify-center items-center"><img src="transport.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name </span></span>
+                <span class="flex flex-col justify-center items-center"><img src="consultant.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                <span class="flex flex-col justify-center items-center"><img src="education-coaching-training.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                <span class="flex flex-col justify-center items-center"><img src="electricals-lights.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                <span class="flex flex-col justify-center items-center"><img src="electronics-appliances.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                <span class="flex flex-col justify-center items-center"><img src="cars-bikes-automobiles.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                
+                <span class="flex flex-col justify-center items-center"><img src="transport.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                <span class="flex flex-col justify-center items-center"><img src="consultant.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                <span class="flex flex-col justify-center items-center"><img src="education-coaching-training.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                <span class="flex flex-col justify-center items-center"><img src="electricals-lights.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                <span class="flex flex-col justify-center items-center"><img src="electronics-appliances.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                <span class="flex flex-col justify-center items-center"><img src="cars-bikes-automobiles.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                
+                <span class="flex flex-col justify-center items-center"><img src="transport.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                <span class="flex flex-col justify-center items-center"><img src="consultant.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                <span class="flex flex-col justify-center items-center"><img src="education-coaching-training.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                <span class="flex flex-col justify-center items-center"><img src="electricals-lights.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                <span class="flex flex-col justify-center items-center"><img src="electronics-appliances.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                <span class="flex flex-col justify-center items-center"><img src="cars-bikes-automobiles.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                
+    
+                <span class="flex flex-col justify-center items-center"><img src="transport.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                <span class="flex flex-col justify-center items-center"><img src="consultant.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                <span class="flex flex-col justify-center items-center"><img src="education-coaching-training.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                <span class="flex flex-col justify-center items-center"><img src="electricals-lights.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                <span class="flex flex-col justify-center items-center"><img src="electronics-appliances.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                <span class="flex flex-col justify-center items-center"><img src="cars-bikes-automobiles.webp" class="md:w-[40px] w-[20px]" alt=""><span class="text-sm">name</span></span>
+                
+    
+             </div>
+
+             <div class="w-[60vw] h-[120px] mt-2"  style="background-position: center;background-size: contain;background-image: url(ad.webp);"></div>
+             <!-- <div class="w-[60vw] h-[120px] mt-2"  style="background-position: center;background-size: contain;background-image: url(ad2.webp);"></div> -->
+             <div class="mt-2 w-[60vw] pt-2  grid grid-cols-3 gap-3 bg-transparent">
+                <div class="flex flex-col justify-center items-center py-3 text-[white] rounded-md bg-[green]">
+                    <span class="text-3xl">10,000+</span>
+                    <span class="text-sm">Business & Service</span>
+                </div>
+                <div class="flex flex-col justify-center items-center py-3 text-[white] rounded-md bg-[blue]">
+                    <span class="text-3xl">200+</span>
+                    <span class="text-sm">Categories</span>
+                </div>
+                <div class="flex flex-col justify-center items-center py-3 text-[white] rounded-md bg-[red]">
+                    <span class="text-3xl">24 X 7</span>
+                    <span class="text-sm">Suppourt</span>
+                </div>
+              </div>
+
+        </div>
+
+       
+
+
+
+        </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta iste, rerum illo quos sunt! Veritatis alias a beatae quod consequuntur soluta sequi similique, eaque laboriosam iure in iste tempore id, sapiente sunt dolorum laudantium reprehenderit adipisci culpa. Fugiat vitae ducimus minus eius quos corrupti magnam labore aspernatur, vel sit, esse modi illum exercitationem accusamus porro. Aliquid quaerat distinctio corrupti velit dignissimos quisquam sapiente, similique repudiandae neque cumque, expedita iure perspiciatis illum recusandae perferendis natus architecto iusto. Porro error laborum repellendus rerum deserunt sequi quisquam. Neque nam labore laudantium dignissimos odio, deserunt harum repellendus ab veritatis illum reprehenderit recusandae soluta velit repudiandae perferendis, minima nisi rem. Odio deleniti, eos excepturi numquam minima dolor dicta, ad velit ipsum enim dolorum voluptate maxime dolore? Labore nemo dicta libero? Beatae quaerat possimus aut consequatur, repudiandae eum qui a error deserunt cumque impedit, ab facilis quibusdam fuga, molestiae nesciunt laboriosam enim velit consectetur alias. Repellendus expedita cupiditate, sint maxime ratione blanditiis itaque dolor fugit, exercitationem atque eaque autem non labore excepturi saepe. At nesciunt quaerat similique corrupti dolore cum! Error nostrum minus laborum dolores recusandae, totam repudiandae repellat similique eaque voluptatem corrupti deserunt reiciendis ab praesentium magnam temporibus odit voluptas omnis, quae ex! Porro.</p>
+</div>
+
+
+<script>
+    function openCategories(){
+        let x = document.getElementById("categories");
+        if (x.style.display === "none") {
+            x.style.display = "grid";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
